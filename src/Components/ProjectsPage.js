@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react';
+import ProjectCard from './ProjectCard';
 
 export default class Github extends Component {
   constructor() {
@@ -22,16 +22,7 @@ export default class Github extends Component {
       <React.Fragment>
         {this.state.projects.map((project, idx) => {
           return (
-            <Card key={idx} color='red' className='ui card'>
-              <Card.Content>
-                <Card.Header>
-                  {project.name}
-                </Card.Header>
-                <Card.Description>
-                  {project.url}
-                </Card.Description>
-              </Card.Content>
-            </Card>
+            <ProjectCard key={idx} project={project}/>
           )
         })}
       </React.Fragment>
