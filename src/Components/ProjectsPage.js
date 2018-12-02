@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
+import { Card } from 'semantic-ui-react';
 
-export default class Github extends Component {
+export default class ProjectsPage extends Component {
   constructor() {
     super();
 
@@ -17,15 +18,14 @@ export default class Github extends Component {
   }
 
   render() {
-    console.log(this.state.projects);
     return (
-      <React.Fragment>
+      <Card.Group>
         {this.state.projects.map((project, idx) => {
           return (
             <ProjectCard key={idx} project={project}/>
           )
         })}
-      </React.Fragment>
+      </Card.Group>
     )
   }
 }

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Stylesheets/App.css';
 import ProjectsPage from './Components/ProjectsPage';
+import BioPage from './Components/BioPage'
+import HomePage from './Components/HomePage';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h2>Portfolio Placeholder</h2>
-        </header>
+      <React.Fragment>
+        <HomePage />
         <ProjectsPage />
-      </div>
+        <BioPage />
+      </React.Fragment>
     );
   }
 }

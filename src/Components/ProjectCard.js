@@ -1,12 +1,13 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 
 export default function ProjectCard(props) {
-  console.log(props)
+  // debugger
   return (
     <Card>
+      <Image src='../../public/favicon.ico'/>
       <Card.Content>
-        <Card.Header>{props.name}</Card.Header>
+        <Card.Header>{props.project.name}</Card.Header>
       </Card.Content>
     </Card>
   )
