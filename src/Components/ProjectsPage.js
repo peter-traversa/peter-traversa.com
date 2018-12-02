@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
 import { Card } from 'semantic-ui-react';
+import '../Stylesheets/ProjectsPage.css';
 
 export default class ProjectsPage extends Component {
   constructor() {
@@ -19,7 +20,7 @@ export default class ProjectsPage extends Component {
 
   render() {
     return (
-      <Card.Group>
+      <Card.Group className='project-cards'>
         {this.state.projects.map((project, idx) => {
           return (
             <ProjectCard key={idx} project={project}/>
