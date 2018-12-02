@@ -20,13 +20,16 @@ export default class ProjectsPage extends Component {
 
   render() {
     return (
-      <Card.Group className='project-cards'>
-        {this.state.projects.map((project, idx) => {
-          return (
-            <ProjectCard key={idx} project={project}/>
-          )
-        })}
-      </Card.Group>
+      <>
+        <h1>Recently Updated Projects</h1>
+        <Card.Group className='project-cards'>
+          {this.state.projects.map((project, idx) => {
+            return (
+              <ProjectCard key={idx} project={project}/>
+            )
+          })}
+        </Card.Group>
+      </>
     )
   }
 }

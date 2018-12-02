@@ -1,0 +1,8 @@
+.navlink {
+  width: '100px';
+  padding: '12px';
+  margin: '0 6px 6px';
+  background: 'red';
+  color: 'white';
+  border: '1px solid black';
+}
