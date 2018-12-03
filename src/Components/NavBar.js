@@ -1,40 +1,53 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react';
-import '../Stylesheets/Navlink.css';
+
+const link = {
+  paddingLeft: '10px',
+  paddingRight: '10px',
+  paddingTop: '10px',
+  margin: '1px',
+  color: 'black',
+  background: 'lightblue',
+  borderRadius: '5px',
+}
 
 const NavBar = () =>
-  <Menu color='green'>
+  <Menu>
     <NavLink
       to="/"
       exact
-      className='navlink'
+      style={link}
       activeStyle={{
-        background: 'black'
+        background: 'blue',
+        color: 'white'
       }}
     >Home</NavLink>
     <NavLink
       to="/bio"
       exact
-      className='navlink'
+      style={link}
       activeStyle={{
-        background: 'black'
+        background: 'blue',
+        color: 'white'
       }}
     >Bio</NavLink>
     <NavLink
       to="/projects"
       exact
-      className='navlink'
+      style={link}
       activeStyle={{
-        background: 'black'
+        background: 'blue',
+        color: 'white'
       }}
     >Projects</NavLink>
     <NavLink
       to="/resume"
       exact
-      className='navlink'
+      style={link}
       activeStyle={{
-        background: 'black'
+        background: 'blue',
+        color: 'white'
       }}
     >Resume</NavLink>
   </Menu>;

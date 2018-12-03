@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard';
 import { Card } from 'semantic-ui-react';
-import '../Stylesheets/ProjectsPage.css';
 
 export default class ProjectsPage extends Component {
   constructor() {
@@ -16,6 +15,10 @@ export default class ProjectsPage extends Component {
     fetch('https://api.github.com/users/peter-traversa/repos?sort=created&direction=desc')
     .then(res => res.json())
     .then(projects => this.setState({projects}));
+  }
+
+  componentWillUnmount() {
+    this.setState({projects: []});
   }
 
   render() {

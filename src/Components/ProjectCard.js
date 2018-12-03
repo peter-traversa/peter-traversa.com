@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
-import '../Stylesheets/ProjectCard.css'
 
 export default function ProjectCard(props) {
   // debugger

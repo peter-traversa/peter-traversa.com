@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function BioPage() {
   return (
-    <h3>Biography Page Placeholder</h3>
+    <h1>Biography Page Placeholder</h1>
   )
 }
