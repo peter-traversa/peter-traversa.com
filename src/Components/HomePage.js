@@ -1,5 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-export default function HomePage() {
-  return <h1>Portfolio Placeholder</h1>
+export default class HomePage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      recommendations: []
+    }
+  }
+  render() {
+    return (
+      <h1>Portfolio Placeholder</h1>
+    )
+  }
 };
