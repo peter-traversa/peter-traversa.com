@@ -2,6 +2,9 @@ import React from 'react';
 
 export default function BioPage() {
   return (
-    <h1>Biography Page Placeholder</h1>
+    <React.Fragment>
+      <h1>Biography</h1>
+      <p>lorem ipsum</p>
+    </React.Fragment>
   )
 }

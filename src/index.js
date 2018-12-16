@@ -6,6 +6,7 @@ import HomePage from './Components/HomePage';
 import BioPage from './Components/BioPage';
 import ProjectsPage from './Components/ProjectsPage';
 import ResumePage from './Components/ResumePage';
+import Footer from './Components/Footer';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ ReactDOM.render((
       <Route exact path="/bio" component={BioPage} />
       <Route exact path="/projects" component={ProjectsPage} />
       <Route exact path="/resume" component={ResumePage} />
+      <Footer />
     </React.Fragment>
   </Router>),
   document.getElementById('root')

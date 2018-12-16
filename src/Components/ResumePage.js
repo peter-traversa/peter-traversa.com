@@ -1,5 +1,12 @@
-import React from 'react';
+import React from "react";
+import '../Stylesheets/index.css';
 
-export default function ResumePage() {
-  return <h1>Resume Page Placeholder</h1>
-};
+const Resume = (props) => {
+  return (
+    <div className="iframe">
+      <iframe scrolling="yes" title='resume' src={require('../Images/petertraversatechresume.pdf')} width="100%" height="100%"></iframe>
+    </div>
+  );
+}
+
+export default Resume;

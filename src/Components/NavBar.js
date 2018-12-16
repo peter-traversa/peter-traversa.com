@@ -6,14 +6,25 @@ const link = {
   paddingLeft: '10px',
   paddingRight: '10px',
   paddingTop: '10px',
-  margin: '1px',
+  paddingBottom: '10px',
+  marginBottom: '35px',
+  marginTop: '2px',
+  marginLeft: '2px',
+  marginRight: '2px',
   color: 'black',
-  background: 'lightblue',
+  background: '#dbf0fd',
   borderRadius: '5px',
 }
 
+const navbar = {
+  backgroundColor: 'midnightblue',
+  margin: '0px',
+  borderRadius: '0px',
+  height: '75px',
+}
+
 const NavBar = () =>
-  <Menu>
+  <Menu style={navbar} >
     <NavLink
       to="/"
       exact
@@ -40,7 +51,7 @@ const NavBar = () =>
         background: 'blue',
         color: 'white'
       }}
-    >Projects</NavLink>
+    >Recent Projects</NavLink>
     <NavLink
       to="/resume"
       exact

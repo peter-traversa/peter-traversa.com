@@ -12,3 +12,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.iframe {
+  height: 100vh;
+  width: 100vw;
+}
+
+.portfolio-footer {
+  background-color: midnightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-text-fill-color: #dbf0fd;
+  height: 75px;
+}
+
+.navbar-menu {
+  background-color: midnightblue;
+}
+
+.projects-page {
+  background-color: #dbf0fd;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-text-fill-color: navy;
+  text-align: center;
+}
