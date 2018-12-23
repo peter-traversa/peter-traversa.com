@@ -18,14 +18,14 @@ code {
   width: 100vw;
 }
 
-.portfolio-footer {
+#portfolio-footer {
   background-color: midnightblue;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   -webkit-text-fill-color: white;
   height: 125px;
-  padding: 3%;
+  padding: 1%;
   margin: 0;
 }
 
@@ -45,4 +45,41 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#recommendations {
+  text-align: center;
+  padding: 15px;
+}
+
+#footer-follow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#footer-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#follow-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footer-connect {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
 }

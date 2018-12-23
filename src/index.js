@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './Stylesheets/index.css';
 import NavBar from './Components/NavBar';
 import HomePage from './Components/HomePage';
-import BlogPage from './Components/BlogPage';
 import ProjectsPage from './Components/ProjectsPage';
 import ResumePage from './Components/ResumePage';
 import Footer from './Components/Footer';
@@ -15,7 +14,6 @@ ReactDOM.render((
     <React.Fragment>
       <NavBar />
       <Route exact path="/" component={HomePage}/>
-      <Route exact path="/blog" component={BlogPage} />
       <Route exact path="/projects" component={ProjectsPage} />
       <Route exact path="/resume" component={ResumePage} />
       <Footer />
