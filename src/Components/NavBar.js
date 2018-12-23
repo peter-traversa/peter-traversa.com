@@ -35,14 +35,14 @@ const NavBar = () =>
       }}
     >Home</NavLink>
     <NavLink
-      to="/bio"
+      to="/blog"
       exact
       style={link}
       activeStyle={{
         background: 'blue',
         color: 'white'
       }}
-    >Bio</NavLink>
+    >Blog</NavLink>
     <NavLink
       to="/projects"
       exact

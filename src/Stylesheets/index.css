@@ -23,8 +23,10 @@ code {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  -webkit-text-fill-color: #dbf0fd;
-  height: 75px;
+  -webkit-text-fill-color: white;
+  height: 125px;
+  padding: 3%;
+  margin: 0;
 }
 
 .navbar-menu {
@@ -37,4 +39,10 @@ code {
   padding-bottom: 20px;
   -webkit-text-fill-color: navy;
   text-align: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
